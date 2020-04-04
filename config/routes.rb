@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   resources :todos
   #rails routes!!
+
+  resources :users
 end
