@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :todos
   #rails routes!!
 
+  post "users/login", to: "users#login"
   resources :users
 end
