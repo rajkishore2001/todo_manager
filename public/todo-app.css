@@ -1,18 +1,20 @@
-.container{
+.Container{
    width:80%;
    margin: auto;
    margin-top: 12%;
    margin-left:19%;
 }
-.container h1{
+.Container h1{
 	font-family: sans-serif;
 	font-weight: lighter;
 	padding-left:40px; 
 	height: 20px;
 	font-size: 25px;
-	color: #4e3e3e;
+	color: #181717;
 }
-
+span{
+   padding-left:10px;
+}
 button{
     background: #48BB78;
     border-radius: 4px;
@@ -33,23 +35,24 @@ button{
 	border-radius: 6px;
 }
 .AddTodo-date{
-	width:100px;
+	width:140px;
 	height:22px;
 	border-radius: 6px;
 }
 
-.Todo_title{
+.Todo-title{
 	display: flex;
      height: 30px;
 }
 
-.List-Element{
+.ListElement{
 	display: flex;
 
 }
 
 
- .List-Element:hover{
+
+ .ListElement:hover{
     background-color: #b3b3b3;
     width:70%
  }
@@ -61,11 +64,28 @@ button{
     visibility: hidden;
 }
 
-.List-Element:hover .Img-Bin{
+.ListElement:hover .Img-Bin{
      visibility: visible;
 }
 
 input[type="checkbox"]{
-   width:21px;
-   height:21px;
+   width: 16px;
+   height: 16px;
+   
+}
+.TodoDate-title{
+   padding-left:40px;
+   height: 0px;
+   color: rgb(0, 0, 0);
+}
+.ListElement-due{
+padding-left: 10px;
+font-size:15px;
+color:#080808a1;
+}
+
+.ListElement-overdue{
+   color: #C53030;
+  
+   font-size:14px;
 }
