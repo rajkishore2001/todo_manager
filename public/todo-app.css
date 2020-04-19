@@ -1,19 +1,19 @@
 .Container{
-   width:80%;
-   margin: auto;
-   margin-top: 12%;
-   margin-left:19%;
+    width:80%;
+    margin: auto;
+    margin-top: 12%;
+    margin-left:19%;
 }
 .Container h1{
-	font-family: sans-serif;
-	font-weight: lighter;
-	padding-left:40px; 
-	height: 20px;
-	font-size: 25px;
-	color: #181717;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-left:40px; 
+    height: 20px;
+    font-size: 25px;
+    color: #181717;
 }
 span{
-   padding-left:10px;
+    padding-left:10px;
 }
 button{
     background: #48BB78;
@@ -27,32 +27,29 @@ button{
     letter-spacing: 0.1px;
 }
 .AddTodo{
-	padding-left: 40px;
+    padding-left: 40px;
 }
 .AddTodo-input{
-	padding-left: 20px;
-	height: 20px;
-	border-radius: 6px;
+    padding-left: 20px;
+    height: 20px;
+    border-radius: 6px;
 }
 .AddTodo-date{
-	width:140px;
-	height:22px;
-	border-radius: 6px;
+    width:140px;
+    height:22px;
+    border-radius: 6px;
 }
 
 .Todo-title{
-	display: flex;
-     height: 30px;
+    display: flex;
+    height: 30px;
 }
 
 .ListElement{
-	display: flex;
-
+    display: flex;
 }
 
-
-
- .ListElement:hover{
+.ListElement:hover{
     background-color: #b3b3b3;
     width:70%
  }
@@ -65,27 +62,26 @@ button{
 }
 
 .ListElement:hover .Img-Bin{
-     visibility: visible;
+    visibility: visible;
 }
 
 input[type="checkbox"]{
-   width: 16px;
-   height: 16px;
+    width: 16px;
+    height: 16px;
    
 }
 .TodoDate-title{
-   padding-left:40px;
-   height: 0px;
-   color: rgb(0, 0, 0);
+    padding-left:40px;
+    height: 0px;
+    color: rgb(0, 0, 0);
 }
 .ListElement-due{
-padding-left: 10px;
-font-size:15px;
-color:#080808a1;
+    padding-left: 10px;
+    font-size:15px;
+    color:#080808a1;
 }
 
 .ListElement-overdue{
-   color: #C53030;
-  
-   font-size:14px;
+    color: #C53030;
+    font-size:14px;
 }
