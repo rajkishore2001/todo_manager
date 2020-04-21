@@ -21,7 +21,7 @@ body {
     margin-bottom: 12px;
 }
 
-.TodoSection{
+.TodoSection {
     margin-bottom: 20px;
 }
 
@@ -41,7 +41,7 @@ body {
     font-size: 12px;
   }
   
-  .TodoItem{
+  .TodoItem {
     font-size: 14px;
     color: #453C52;
     margin-left: 8px;
@@ -91,18 +91,18 @@ body {
       text-decoration:line-through;
   }
 
-  .TodoSection{
+  .TodoSection {
       margin-bottom:20px;
   }
 
-  .AddTodo{
+  .AddTodo {
       display:flex;
       height:32px;
       align-items: stretch;
       margin-bottom: 24px; 
   }
 
-  .AddTodo-text{
+  .AddTodo-text {
     padding: 6px 12px;
     font-size: 14px;
     color: #453C52;
@@ -111,7 +111,7 @@ body {
     border: 1px solid #BFBBCC;
   }
 
-  .AddTodo-date{
+  .AddTodo-date {
     padding: 6px;
     font-size: 14px;
     color: #453C52;
@@ -120,7 +120,7 @@ body {
     border: 1px solid #BFBBCC;
   }
 
-  .AddTodo-button{
+  .AddTodo-button {
     font-size: 14px;
     color: white;
     background-color: #48bb78;
