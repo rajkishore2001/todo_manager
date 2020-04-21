@@ -8,13 +8,14 @@
         <% todos.all.each do |todo| %>
             <li classs"TodoItem">
                 <label class="TodoItem-container">
-                    <input class"TodoItem-checkbox" type="checkbox" checked />
                     <%if todo.completed%>
+                        <input class"TodoItem-checkbox" type="checkbox" checked />
                         <div class="TodoItem-textStrikked">
                             <%= todo.todo_text %>
                         </div>
                     <%end%>
                     <%if !todo.completed%>
+                        <input class"TodoItem-checkbox" type="checkbox" />
                         <div class="TodoItem-text">
                             <%= todo.todo_text %>
                         </div>
