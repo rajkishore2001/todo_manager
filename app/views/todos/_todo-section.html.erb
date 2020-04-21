@@ -8,10 +8,12 @@
         <% todos.all.each do |todo| %>
             <li classs"TodoItem">
                 <label class="TodoItem-container">
+                <form action="/todos/<%= todo.id %>" method="PUT" >
                     <input class"TodoItem-checkbox" type="checkbox" <%= todo.completed ? "checked" : "" %> />
-                        <p class= <%= todo.completed ? "TodoItem-textStrikked" : "TodoItem-text"%>>
-                            <%= todo.todo_text %>
-                        </p>
+                </form>
+                     <p class= <%= todo.completed ? "TodoItem-textStrikked" : "TodoItem-text"%>>
+                        <%= todo.todo_text %>
+                    </p>
                     <% if show_due_date %>
                         <p class="TodoItem-dueDate"><%=todo.due_date.to_s(:short)%></p>
                     <% end %>
