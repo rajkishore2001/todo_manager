@@ -24,8 +24,6 @@ class TodosController < ApplicationController
       due_date: due_date,
       completed: false,
     )
-    response_text = "hey,Your new Todo is created with id #{new_todo.id}"
-    render plain: response_text
   end
 
   def update
