@@ -22,7 +22,9 @@
                     </p>
                     
                     <% if show_due_date %>
-                        <p class="TodoItem-dueDate"><%=todo.due_date.to_s(:short)%></p>
+                        <p class="TodoItem-dueDate">
+                            <%=todo.due_date.to_s(:short)%>
+                        </p>
                     <% end %>
  
                     <a href="javascript:void(0)" class="TodoItem-delete">
