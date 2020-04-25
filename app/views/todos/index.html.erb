@@ -1,14 +1,13 @@
 
 <main class="TodoPageMain">
     <article>
-
         <h1 class="TodoPage-title">My Todo-list</h1>
-
         <%= form_with(url: "/todos" ,method: "post" , class: "AddTodo") do %>
             <%=text_field_tag 'todo_text' , nil ,placeholder: "whats next ?" , class: "AddTodo-text" %>
             <%=date_field_tag 'due_date' ,nil , class: 'AddTodo-date'%>
             <%=submit_tag  nil ,class: "AddTodo-button" , value: "Add" %>
-    <% end %>
+
+        <% end %>
 
         <%= render partial: "todo-section", locals: {
             section_title: "Overdue",
@@ -25,6 +24,5 @@
             todos: Todo.due_later,
             show_due_date:true
         } %>
-        
     </article>
 </main> 
