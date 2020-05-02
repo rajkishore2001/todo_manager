@@ -1,9 +1,5 @@
-# todos_controller.rb
 class TodosController < ApplicationController
   def index
-    #render plain: Todo.all.
-    #         map { |todo| todo.to_pleasant_string }.
-    #         join("\n")
     @todos = Todo.of_user(current_user)
     render "index"
   end
@@ -12,7 +8,6 @@ class TodosController < ApplicationController
     id = params[:id]
     todo = Todo.of_user(current_user).find(id)
     render plain: todo.to_pleasant_string
-    #render plain: "local id #{id}"
   end
 
   def create

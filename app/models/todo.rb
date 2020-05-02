@@ -4,7 +4,6 @@ class Todo < ActiveRecord::Base
   validates :due_date, presence: true
   validates :todo_text, length: { minimum: 2 }
 
-  #Todo.last.user
   def to_pleasant_string
     is_completed = completed ? "[x]" : "[ ]"
     "#{id}. #{due_date.to_s(:long)} #{todo_text} #{is_completed} "
